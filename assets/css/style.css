@@ -22,7 +22,7 @@ body {
   width: 550px;
   background: transparent;
   border-radius: 3px;
-  box-sizing: 0px 0px 10px rgba(0, 0, 0, .5)
+  box-sizing: 0px 0px 10px rgba(0, 0, 0, .5);
 }
 
 .relogio div {
@@ -37,7 +37,7 @@ body {
   background: rgba(5, 5, 5, 0.9);
   box-shadow: 5px 5px 15px rgba(0, 0, 0, .7);
   border-radius: 7px;
-  letter-spacing: 3px
+  letter-spacing: 3px;
 }
 
 .relogio span {
@@ -46,5 +46,22 @@ body {
 }
 
 .relogio span.tempo {
-  font-size: 10px
+  font-size: 10px;
+}
+
+@media (max-width: 768px) {
+  body {
+    align-items: center;
+    justify-content: center;
+  }
+
+  .relogio {
+    flex-direction: column;
+    align-items: center;
+    width: 80%;
+  }
+
+  .relogio div {
+    margin-bottom: 40px;
+  }
 }
